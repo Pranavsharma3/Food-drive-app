@@ -21,7 +21,7 @@ if tabs == "Journey Overview":
 
   # Page 1: Dashboard
   def dashboard():
-      st.image('/content/logo_.png', use_column_width=True)
+      st.image('logo_.png', use_column_width=True)
 
       st.subheader("💡 Abstract:")
 
@@ -139,7 +139,7 @@ if tabs == "Journey Overview":
       if st.button("Predict"):
 
          # Load the trained model
-         model = joblib.load('/content/random_forest_regressor_model.pkl')
+         model = joblib.load('random_forest_regressor_model.pkl')
 
           # Prepare input data for prediction
          input_data = [[selected_data, selected_data_stake,  routes_completed, time_spent, adult_volunteers, doors_in_route, youth_volunteers]]
