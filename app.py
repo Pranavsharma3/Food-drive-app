@@ -153,7 +153,7 @@ if tabs == "Journey Overview":
           # You can add additional information or actions based on the prediction if needed
     # Page 4: Neighbourhood Mapping
     # Read geospatial data
-  geodata = pd.read_csv("/content/merged_data.csv")
+  geodata = pd.read_csv("merged_data.csv", encoding='latin1')
 
   def neighbourhood_mapping():
       st.title("Neighbourhood Mapping")
